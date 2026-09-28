@@ -1,0 +1,425 @@
+{
+  "Navigation": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "allServices": "Alle Leistungen",
+    "maintenanceCleaning": "Unterhaltsreinigung",
+    "officeCleaning": "Büroreinigung",
+    "buildingCleaning": "Gebäudereinigung",
+    "windowCleaning": "Fensterreinigung",
+    "deepCleaning": "Grundreinigung",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "requestQuote": "Angebot anfordern",
+    "openMenu": "Menü öffnen",
+    "primaryNavigation": "Hauptnavigation",
+    "serviceMenu": "Leistungsmenü",
+    "language": "Sprache"
+  },
+  "Footer": {
+    "claim": "Saubere Räume. Starker Eindruck.",
+    "contact": "Kontakt",
+    "navigation": "Navigation",
+    "legal": "Rechtliches",
+    "legalNotice": "Impressum",
+    "privacy": "Datenschutz",
+    "placeholderNotice": "Kontaktdaten werden ergänzt.",
+    "copyright": "Alle Rechte vorbehalten."
+  },
+  "Home": {
+    "pageTitle": "Barbara GmbH – Professionelle Reinigung",
+    "hero": {
+      "eyebrow": "Professionelle Reinigung in Österreich",
+      "titleBefore": "Sauberkeit, auf die Sie sich",
+      "titleAccent": "verlassen",
+      "titleAfter": "können.",
+      "description": "Professionelle Reinigungslösungen für Unternehmen, Immobilien und private Objekte – sorgfältig geplant und zuverlässig ausgeführt.",
+      "primaryCta": "Angebot anfordern",
+      "secondaryCta": "Unsere Leistungen",
+      "imageAlt": "Hochwertiger, lichtdurchfluteter Bürobereich mit gepflegten Glas- und Steinflächen",
+      "imageCaption": "Präzision, die man sieht. Qualität, die bleibt.",
+      "trust": {
+        "reliable": "Zuverlässig",
+        "flexible": "Flexibel",
+        "professional": "Professionell",
+        "personal": "Persönlich"
+      }
+    },
+    "services": {
+      "eyebrow": "Unsere Leistungen",
+      "title": "Für jede Anforderung die passende Reinigungslösung.",
+      "viewAll": "Alle Leistungen ansehen",
+      "learnMore": "Mehr erfahren",
+      "items": {
+        "maintenanceCleaning": {
+          "title": "Unterhaltsreinigung",
+          "description": "Regelmäßige Pflege, abgestimmt auf Ihr Objekt, Ihre Abläufe und Ihren Qualitätsanspruch.",
+          "imageAlt": "Sorgfältige Reinigung einer dunklen Natursteinoberfläche"
+        },
+        "officeCleaning": {
+          "title": "Büroreinigung",
+          "description": "Gepflegte Arbeitsräume für ein professionelles Umfeld und einen überzeugenden ersten Eindruck.",
+          "imageAlt": "Professionelle Reinigung eines modernen Besprechungsraums"
+        },
+        "buildingCleaning": {
+          "title": "Gebäudereinigung",
+          "description": "Saubere Allgemeinflächen und repräsentative Eingangsbereiche – verlässlich aus einer Hand.",
+          "imageAlt": "Gepflegtes Foyer eines modernen Geschäftsgebäudes"
+        },
+        "windowCleaning": {
+          "title": "Fensterreinigung",
+          "description": "Klare Glasflächen und streifenfreie Ergebnisse für mehr Licht und einen gepflegten Auftritt.",
+          "imageAlt": "Professionelle Reinigung einer raumhohen Glasfront"
+        },
+        "deepCleaning": {
+          "title": "Grundreinigung",
+          "description": "Intensive Reinigung für stark beanspruchte Flächen und den nachhaltigen Werterhalt.",
+          "imageAlt": "Maschinelle Grundreinigung eines hellen Natursteinbodens"
+        }
+      }
+    },
+    "benefits": {
+      "eyebrow": "Warum Barbara",
+      "title": "Ihre Vorteile auf einen Blick.",
+      "intro": "Wir verbinden sorgfältige Ausführung mit klarer Kommunikation und Lösungen, die sich flexibel an Ihr Objekt anpassen.",
+      "items": {
+        "quality": {
+          "title": "Hohe Qualität",
+          "description": "Sorgfältige Abläufe und ein konsequenter Blick fürs Detail."
+        },
+        "team": {
+          "title": "Erfahrenes Team",
+          "description": "Professionelles Arbeiten mit Verantwortung und Respekt für Ihr Objekt."
+        },
+        "flexibility": {
+          "title": "Flexible Einsatzzeiten",
+          "description": "Reinigungszeiten, die sich sinnvoll in Ihre Abläufe integrieren."
+        },
+        "reliability": {
+          "title": "Zuverlässiger Service",
+          "description": "Verbindliche Absprachen und persönliche Betreuung auf Augenhöhe."
+        }
+      }
+    },
+    "about": {
+      "eyebrow": "Über uns",
+      "title": "Ein sauberes Umfeld schafft neue Möglichkeiten.",
+      "paragraphOne": "Barbara GmbH steht für zuverlässige, sorgfältige und professionelle Reinigung.",
+      "paragraphTwo": "Wir betreuen unsere Kunden persönlich und entwickeln Lösungen, die genau zum jeweiligen Objekt und Bedarf passen.",
+      "cta": "Mehr über uns",
+      "imageAlt": "Professionelles Reinigungsteam in einem hochwertigen modernen Gebäude"
+    },
+    "contact": {
+      "eyebrow": "Persönlich für Sie da",
+      "title": "Sie suchen einen zuverlässigen Reinigungspartner?",
+      "description": "Wir beraten Sie gerne und erstellen ein individuelles, unverbindliches Angebot.",
+      "cta": "Jetzt unverbindlich anfragen",
+      "statement": "Saubere Räume. Starker Eindruck."
+    }
+  },
+  "ServicesPage": {
+    "hero": {
+      "eyebrow": "Leistungen",
+      "title": "Professionelle Reinigung für jeden Anspruch.",
+      "description": "Von der laufenden Pflege bis zur intensiven Grundreinigung: Wir entwickeln Lösungen, die zu Ihrem Objekt und Ihren Abläufen passen.",
+      "imageAlt": "Hochwertiges, sorgfältig gepflegtes Foyer eines modernen Geschäftsgebäudes"
+    },
+    "overview": {
+      "eyebrow": "Unser Angebot",
+      "title": "Sorgfältig geplant. Professionell ausgeführt.",
+      "intro": "Jedes Objekt stellt andere Anforderungen. Deshalb betrachten wir Flächen, Nutzung und gewünschte Abläufe gemeinsam und wählen die passende Reinigungslösung.",
+      "navigationLabel": "Direkt zu den einzelnen Leistungen",
+      "items": {
+        "maintenanceCleaning": "Unterhaltsreinigung",
+        "officeCleaning": "Büroreinigung",
+        "buildingCleaning": "Gebäudereinigung",
+        "windowCleaning": "Fensterreinigung",
+        "deepCleaning": "Grundreinigung"
+      }
+    },
+    "details": {
+      "sectionLabel": "Leistungen im Detail",
+      "serviceLabel": "Leistung",
+      "cta": "Diese Leistung anfragen",
+      "items": {
+        "maintenanceCleaning": {
+          "title": "Unterhaltsreinigung",
+          "description": "Regelmäßige Reinigung erhält den gepflegten Eindruck und unterstützt einen verlässlichen Betrieb. Umfang und Rhythmus werden passend zu Nutzung und Objekt abgestimmt.",
+          "bulletOne": "Individuell abgestimmte Reinigungsintervalle",
+          "bulletTwo": "Sorgfältige Pflege von Flächen und Gemeinschaftsbereichen",
+          "bulletThree": "Klare Abläufe und persönliche Abstimmung"
+        },
+        "officeCleaning": {
+          "title": "Büroreinigung",
+          "description": "Ein sauberes Arbeitsumfeld schafft Wohlbefinden und vermittelt Professionalität. Wir berücksichtigen Arbeitszeiten, Raumaufteilung und den täglichen Betrieb.",
+          "bulletOne": "Arbeitsplätze, Besprechungs- und Aufenthaltsräume",
+          "bulletTwo": "Sanitär- und Küchenbereiche",
+          "bulletThree": "Flexible Abstimmung auf Ihre Betriebszeiten"
+        },
+        "buildingCleaning": {
+          "title": "Gebäudereinigung",
+          "description": "Repräsentative Eingänge und gepflegte Allgemeinflächen prägen den ersten Eindruck. Unsere Lösungen richten sich nach Objektgröße und Nutzung.",
+          "bulletOne": "Eingangsbereiche, Stiegenhäuser und Verkehrsflächen",
+          "bulletTwo": "Pflege unterschiedlicher Oberflächen und Materialien",
+          "bulletThree": "Abgestimmte Leistungen für gewerbliche Immobilien"
+        },
+        "windowCleaning": {
+          "title": "Fensterreinigung",
+          "description": "Klare Fenster und gepflegte Glasflächen bringen mehr Licht in Räume und unterstützen einen hochwertigen Gesamteindruck.",
+          "bulletOne": "Fenster, Glastüren und Innenverglasungen",
+          "bulletTwo": "Sorgfältige, streifenfreie Ausführung",
+          "bulletThree": "Schonender Umgang mit Rahmen und angrenzenden Flächen"
+        },
+        "deepCleaning": {
+          "title": "Grundreinigung",
+          "description": "Bei starker Beanspruchung oder besonderen Anlässen sorgt eine intensive Reinigung für eine gründliche Auffrischung von Flächen und Bereichen.",
+          "bulletOne": "Intensive Bearbeitung stark beanspruchter Flächen",
+          "bulletTwo": "Passende Verfahren für unterschiedliche Materialien",
+          "bulletThree": "Planung nach Objektzustand und gewünschtem Ergebnis"
+        }
+      }
+    }
+  },
+  "AboutPage": {
+    "hero": {
+      "eyebrow": "Über Barbara GmbH",
+      "title": "Sauberkeit beginnt mit Verantwortung.",
+      "description": "Wir stehen für professionelle Reinigung, verlässliche Zusammenarbeit und einen sorgfältigen Umgang mit jedem Objekt.",
+      "imageAlt": "Professionelles Reinigungsteam in einem gepflegten modernen Gebäude"
+    },
+    "introduction": {
+      "eyebrow": "Unser Anspruch",
+      "title": "Persönlich betreut. Präzise umgesetzt.",
+      "paragraphOne": "Barbara GmbH bietet Reinigungslösungen für Unternehmen, Immobilien und private Objekte. Im Mittelpunkt stehen die Anforderungen des jeweiligen Standorts und eine klare, persönliche Abstimmung.",
+      "paragraphTwo": "Unsere Arbeitsweise ist auf Sorgfalt, Verlässlichkeit und langfristig gepflegte Räume ausgerichtet. Unternehmensspezifische Details können an dieser Stelle ergänzt werden, sobald sie final freigegeben sind.",
+      "imageAlt": "Eleganter Bürobereich mit gepflegten Glas-, Holz- und Steinoberflächen"
+    },
+    "values": {
+      "eyebrow": "Unsere Werte",
+      "title": "Woran wir unsere Arbeit messen.",
+      "items": {
+        "reliability": {
+          "title": "Verlässlichkeit",
+          "description": "Klare Vereinbarungen bilden die Grundlage für eine vertrauensvolle Zusammenarbeit."
+        },
+        "quality": {
+          "title": "Qualität",
+          "description": "Sorgfältige Ausführung und Aufmerksamkeit für Details prägen unseren Anspruch."
+        },
+        "personal": {
+          "title": "Persönlicher Service",
+          "description": "Direkte Abstimmung hilft uns, Anforderungen zu verstehen und passend umzusetzen."
+        },
+        "flexibility": {
+          "title": "Flexibilität",
+          "description": "Leistungen und Einsatzzeiten orientieren sich sinnvoll an Objekt und Nutzung."
+        }
+      }
+    },
+    "quality": {
+      "eyebrow": "Qualitätsverständnis",
+      "title": "Qualität zeigt sich im Detail.",
+      "intro": "Gute Reinigung beginnt mit einem klaren Verständnis der Aufgabe und setzt sich in jedem Arbeitsschritt fort.",
+      "items": {
+        "planning": {
+          "title": "Durchdachte Planung",
+          "description": "Anforderungen, Flächen und Abläufe werden vorab strukturiert betrachtet."
+        },
+        "execution": {
+          "title": "Sorgfältige Ausführung",
+          "description": "Materialien und Räume werden verantwortungsvoll und mit Blick fürs Detail behandelt."
+        },
+        "communication": {
+          "title": "Klare Kommunikation",
+          "description": "Persönliche Abstimmung schafft Transparenz und verlässliche Zusammenarbeit."
+        }
+      }
+    },
+    "approach": {
+      "eyebrow": "Unsere Arbeitsweise",
+      "title": "Vom Bedarf zur passenden Lösung.",
+      "intro": "Eine klare Vorgehensweise sorgt dafür, dass Leistung, Rhythmus und Umsetzung zum jeweiligen Objekt passen.",
+      "items": {
+        "understand": {
+          "title": "Verstehen",
+          "description": "Wir erfassen Anforderungen, Nutzung und Besonderheiten des Objekts."
+        },
+        "plan": {
+          "title": "Planen",
+          "description": "Auf dieser Grundlage entsteht ein nachvollziehbares, individuelles Leistungskonzept."
+        },
+        "deliver": {
+          "title": "Umsetzen",
+          "description": "Die vereinbarten Leistungen werden sorgfältig und verlässlich ausgeführt."
+        }
+      }
+    }
+  },
+  "ContactPage": {
+    "hero": {
+      "eyebrow": "Kontakt",
+      "title": "Lassen Sie uns über Ihr Objekt sprechen.",
+      "description": "Erzählen Sie uns, welche Unterstützung Sie benötigen. Wir beraten Sie persönlich und unverbindlich.",
+      "imageAlt": "Sorgfältige Reinigung einer hochwertigen Natursteinoberfläche"
+    },
+    "details": {
+      "sectionLabel": "Kontaktinformationen und Anfrageformular",
+      "eyebrow": "Direkter Kontakt",
+      "title": "Wir sind gerne für Sie da.",
+      "intro": "Die finalen Kontaktdaten werden nach Freigabe durch Barbara GmbH an dieser Stelle ergänzt.",
+      "placeholderNotice": "Platzhalter – finale Angaben müssen vom Kunden bestätigt werden.",
+      "items": {
+        "address": "Adresse",
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "hours": "Geschäftszeiten"
+      }
+    },
+    "form": {
+      "title": "Unverbindliche Anfrage",
+      "intro": "Beschreiben Sie kurz Ihr Objekt und die gewünschte Leistung.",
+      "name": "Name",
+      "company": "Firma",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "service": "Gewünschte Leistung",
+      "chooseService": "Bitte auswählen",
+      "otherService": "Andere Leistung",
+      "message": "Nachricht",
+      "privacyBefore": "Ich habe die",
+      "privacyLink": "Datenschutzerklärung",
+      "privacyAfter": "gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage zu.",
+      "submit": "Anfrage senden",
+      "submitting": "Anfrage wird gesendet",
+      "fieldsLegend": "Ihre Kontaktdaten und Anfrage",
+      "honeypot": "Website",
+      "errors": {
+        "required": "Dieses Feld ist erforderlich.",
+        "nameLength": "Bitte geben Sie einen Namen mit 2 bis 100 Zeichen ein.",
+        "companyLength": "Der Firmenname darf höchstens 120 Zeichen lang sein.",
+        "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+        "phoneLength": "Die Telefonnummer darf höchstens 40 Zeichen lang sein.",
+        "invalidService": "Bitte wählen Sie eine gültige Leistung aus.",
+        "messageLength": "Bitte geben Sie eine Nachricht mit 10 bis 5.000 Zeichen ein.",
+        "privacyRequired": "Bitte stimmen Sie der Verarbeitung Ihrer Angaben zu."
+      },
+      "status": {
+        "validationErrorTitle": "Bitte prüfen Sie Ihre Angaben.",
+        "validationErrorBody": "Korrigieren Sie die markierten Felder und senden Sie die Anfrage erneut.",
+        "rateLimitedTitle": "Zu viele Anfragen.",
+        "rateLimitedBody": "Bitte warten Sie etwas und versuchen Sie es später erneut.",
+        "serviceErrorTitle": "Ihre Anfrage konnte leider nicht gesendet werden.",
+        "serviceErrorBody": "Bitte versuchen Sie es erneut.",
+        "successTitle": "Vielen Dank für Ihre Anfrage.",
+        "successBody": "Wir melden uns so schnell wie möglich bei Ihnen."
+      }
+    }
+  },
+  "Metadata": {
+    "siteName": "Barbara GmbH",
+    "imageAlt": "Professionell gereinigter, moderner Büroraum",
+    "pages": {
+      "home": {
+        "title": "Barbara GmbH – Professionelle Reinigung in Österreich",
+        "description": "Professionelle Reinigungslösungen für Unternehmen, Immobilien und private Objekte – sorgfältig geplant und zuverlässig ausgeführt."
+      },
+      "services": {
+        "title": "Reinigungsleistungen | Barbara GmbH",
+        "description": "Unterhalts-, Büro-, Gebäude-, Fenster- und Grundreinigung – professionell auf Ihr Objekt und Ihre Abläufe abgestimmt."
+      },
+      "about": {
+        "title": "Über Barbara GmbH | Professionelle Reinigung",
+        "description": "Lernen Sie die Werte, Qualitätsansprüche und persönliche Arbeitsweise von Barbara GmbH kennen."
+      },
+      "contact": {
+        "title": "Kontakt und Reinigungsanfrage | Barbara GmbH",
+        "description": "Kontaktieren Sie Barbara GmbH für eine persönliche Beratung und ein unverbindliches Angebot für Ihr Objekt."
+      },
+      "legalNotice": {
+        "title": "Impressum | Barbara GmbH",
+        "description": "Impressum und Anbieterinformationen der Barbara GmbH."
+      },
+      "privacy": {
+        "title": "Datenschutz | Barbara GmbH",
+        "description": "Informationen zur Verarbeitung personenbezogener Daten auf der Website der Barbara GmbH."
+      }
+    }
+  },
+  "LegalNoticePage": {
+    "eyebrow": "Rechtliche Informationen",
+    "title": "Impressum",
+    "intro": "Anbieterinformationen zur Website der Barbara GmbH. Die gekennzeichneten Angaben werden vor der Veröffentlichung durch freigegebene Unternehmensdaten ersetzt.",
+    "notice": {
+      "title": "Entwurf zur Prüfung",
+      "body": "Diese Seite enthält bewusst keine erfundenen Unternehmens- oder Rechtsangaben. Der vollständige Inhalt muss vor dem Produktionsstart von Barbara GmbH beziehungsweise einer Rechtsberatung freigegeben werden."
+    },
+    "sections": {
+      "company": {
+        "title": "Unternehmensangaben",
+        "body": "Barbara GmbH\n[vollständige Firmenanschrift ergänzen]\n[Rechtsform und Sitz anhand des Firmenbuchs bestätigen]"
+      },
+      "contact": {
+        "title": "Kontakt",
+        "body": "Telefon: [freigegebene Telefonnummer ergänzen]\nE-Mail: [freigegebene geschäftliche E-Mail-Adresse ergänzen]"
+      },
+      "register": {
+        "title": "Firmenbuch und Steuerangaben",
+        "body": "Firmenbuchnummer: [ergänzen]\nFirmenbuchgericht: [ergänzen]\nUID-Nummer: [ergänzen]\nGeschäftsführung beziehungsweise vertretungsbefugte Person: [ergänzen]"
+      },
+      "businessPurpose": {
+        "title": "Unternehmensgegenstand und Aufsicht",
+        "body": "Unternehmensgegenstand: [freigegebene Formulierung ergänzen]\nZuständige Aufsichts- oder Gewerbebehörde: [falls erforderlich ergänzen]\nAnwendbare berufsrechtliche Vorschriften: [durch Rechtsberatung prüfen und ergänzen]"
+      },
+      "responsibility": {
+        "title": "Inhaltliche Verantwortung",
+        "body": "Medieninhaberin und für den Inhalt verantwortlich: [vollständige, rechtlich geprüfte Angaben ergänzen]. Weitere nach österreichischem Recht erforderliche Offenlegungen und Hinweise müssen vor Veröffentlichung geprüft und freigegeben werden."
+      }
+    }
+  },
+  "PrivacyPage": {
+    "eyebrow": "Rechtliche Informationen",
+    "title": "Datenschutzerklärung",
+    "intro": "Dieser Entwurf beschreibt die aktuell technisch vorgesehenen Datenflüsse. Rechtsgrundlagen, Aufbewahrungsfristen und Kontaktdaten müssen vor der Aktivierung des Kontaktformulars geprüft und freigegeben werden.",
+    "notice": {
+      "title": "Entwurf zur Prüfung",
+      "body": "Die Datenschutzerklärung ist eine Arbeitsgrundlage und keine finale Rechtsberatung. Die produktive Datenerhebung darf erst nach rechtlicher und unternehmerischer Freigabe aktiviert werden."
+    },
+    "sections": {
+      "controller": {
+        "title": "Verantwortliche Stelle",
+        "body": "Barbara GmbH\n[vollständige Firmenanschrift ergänzen]\nE-Mail: [Datenschutz-Kontakt ergänzen]\nTelefon: [freigegebene Telefonnummer ergänzen]"
+      },
+      "hosting": {
+        "title": "Hosting und technische Protokolle",
+        "body": "Die Website ist für das Hosting bei Netlify vorgesehen. Beim Aufruf können technisch notwendige Verbindungsdaten, insbesondere IP-Adresse, Zeitpunkt, angeforderte Ressource und Browserinformationen, in Serverprotokollen verarbeitet werden. Zweck, Rechtsgrundlage, Speicherort und Aufbewahrungsdauer sind anhand der finalen Hosting-Konfiguration und der beauftragten Verträge zu bestätigen."
+      },
+      "contactForm": {
+        "title": "Kontaktformular",
+        "body": "Bei einer Anfrage werden Name, E-Mail-Adresse, Nachricht, Sprache und Zeitpunkt sowie freiwillig Firma, Telefonnummer und gewünschte Leistung verarbeitet. Die Angaben dienen ausschließlich der Bearbeitung der Anfrage. Die konkrete Rechtsgrundlage und die interne Aufbewahrungsdauer sind vor dem Produktivstart festzulegen. Die Website speichert keine Kopie der Anfrage in einer eigenen Anwendungsdatenbank."
+      },
+      "emailDelivery": {
+        "title": "E-Mail-Zustellung",
+        "body": "Zur Übermittlung einer Anfrage an das Geschäftspostfach ist der Dienst Resend vorgesehen. Die freigegebenen Formulardaten werden dazu als E-Mail verarbeitet; die Adresse der anfragenden Person wird nur als Antwortadresse verwendet. Es wird keine automatische Bestätigungs-E-Mail versendet. Vertrags-, Speicher- und Übermittlungsdetails sind vor dem Produktivstart rechtlich zu prüfen."
+      },
+      "rateLimiting": {
+        "title": "Schutz vor missbräuchlichen Anfragen",
+        "body": "Zum Schutz des Formulars ist eine technische Begrenzung über Upstash Redis vorgesehen. IP- und E-Mail-Adressen werden vor der Übermittlung mit einem geheimen HMAC-Schlüssel in nicht direkt lesbare Kennungen umgewandelt. In Redis werden nur diese Kennungen und kurzlebige Zähler für die Begrenzungszeiträume verarbeitet. Die finale Konfiguration und rechtliche Grundlage sind zu bestätigen."
+      },
+      "cookies": {
+        "title": "Cookies, Analyse und externe Inhalte",
+        "body": "Die aktuelle Website setzt keine nicht notwendigen Cookies ein und bindet keine Analyse-, Marketing- oder Karten-Dienste ein. Deshalb wird kein Cookie-Banner angezeigt. Werden solche Dienste später ergänzt, müssen sie vor dem Laden in ein wirksames Einwilligungssystem aufgenommen und diese Erklärung aktualisiert werden."
+      },
+      "retention": {
+        "title": "Speicherdauer und Rechtsgrundlagen",
+        "body": "Konkrete Aufbewahrungsfristen, Löschabläufe und Rechtsgrundlagen für Postfachdaten und technische Protokolle werden nicht erfunden. Sie sind von Barbara GmbH gemeinsam mit einer Rechtsberatung anhand der tatsächlichen Geschäftsabläufe, Verträge und gesetzlichen Pflichten festzulegen."
+      },
+      "rights": {
+        "title": "Rechte betroffener Personen",
+        "body": "Informationen zu Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch, Widerruf und Beschwerdemöglichkeiten müssen in ihrer finalen, für Barbara GmbH zutreffenden Fassung ergänzt werden. Anfragen sind künftig an den freigegebenen Datenschutz-Kontakt zu richten."
+      }
+    }
+  },
+  "Accessibility": {
+    "skipToContent": "Zum Inhalt springen"
+  }
+}
