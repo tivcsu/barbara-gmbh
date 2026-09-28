@@ -29,6 +29,15 @@ export const metadata: Metadata = {
   metadataBase: getSiteUrl(),
   applicationName: "Barbara GmbH",
   title: "Barbara GmbH",
+  icons: {
+    icon: {
+      url: "/images/favicon.png",
+      type: "image/png",
+      sizes: "1254x1254",
+    },
+    shortcut: "/images/favicon.png",
+    apple: "/images/favicon.png",
+  },
   formatDetection: {
     address: false,
     email: false,

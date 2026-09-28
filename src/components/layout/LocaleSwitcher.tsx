@@ -29,7 +29,7 @@ export function LocaleSwitcher({
     if (nextLocale === locale) return;
 
     startTransition(() => {
-      router.replace(pathname, { locale: nextLocale });
+      router.replace(pathname, { locale: nextLocale, scroll: false });
     });
   }
 

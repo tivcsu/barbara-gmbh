@@ -3,6 +3,10 @@ import { getTranslations } from "next-intl/server";
 
 import { Link } from "@/src/i18n/navigation";
 
+import {
+  CloseMenuOnNavigate,
+  ResetScrollAfterMenuNavigation,
+} from "./CloseMenuOnNavigate";
 import { Container } from "./Container";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 import { Logo } from "./Logo";
@@ -21,11 +25,13 @@ export async function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/80 bg-warm-white/95 backdrop-blur-md">
-      <Container className="flex min-h-header items-center justify-between gap-4 sm:gap-8">
-        <Logo />
+      <ResetScrollAfterMenuNavigation />
+      <CloseMenuOnNavigate className="contents">
+        <Container className="flex min-h-header items-center justify-between gap-4 sm:gap-8">
+          <Logo />
 
-        <nav aria-label={t("primaryNavigation")} className="hidden items-center gap-8 xl:flex">
-          <Link className="nav-link" href="/">
+          <nav aria-label={t("primaryNavigation")} className="hidden items-center gap-8 xl:flex">
+          <Link className="nav-link" href="/" scroll={false}>
             {t("home")}
           </Link>
 
@@ -47,6 +53,7 @@ export async function Header() {
                       ? { pathname: "/services", hash: serviceLink.anchor }
                       : "/services"
                   }
+                  scroll={"anchor" in serviceLink}
                   className={`group/link flex items-center justify-between gap-4 px-4 py-3 text-sm font-medium text-ink transition-colors duration-200 hover:bg-warm-gray/55 hover:text-gold-dark ${
                     index === 0 ? "mb-2 border-b border-border pb-4" : ""
                   }`}
@@ -62,17 +69,17 @@ export async function Header() {
             </div>
           </details>
 
-          <Link className="nav-link" href="/about">
+          <Link className="nav-link" href="/about" scroll={false}>
             {t("about")}
           </Link>
-          <Link className="nav-link" href="/contact">
+          <Link className="nav-link" href="/contact" scroll={false}>
             {t("contact")}
           </Link>
         </nav>
 
         <div className="hidden items-center gap-6 xl:flex">
           <LocaleSwitcher label={t("language")} />
-          <Link className="button-primary" href="/contact">
+          <Link className="button-primary" href="/contact" scroll={false}>
             {t("requestQuote")}
             <ArrowRight aria-hidden="true" className="h-4 w-4" strokeWidth={1.5} />
           </Link>
@@ -86,7 +93,7 @@ export async function Header() {
           <div className="fixed inset-x-0 top-header max-h-[calc(100dvh-var(--header-height))] overflow-y-auto border-b border-border bg-warm-white shadow-subtle">
             <Container className="py-6">
               <nav aria-label={t("primaryNavigation")} className="flex flex-col">
-                <Link className="mobile-nav-link" href="/">
+                <Link className="mobile-nav-link" href="/" scroll={false}>
                   {t("home")}
                 </Link>
                 <details className="border-b border-border">
@@ -103,6 +110,7 @@ export async function Header() {
                             ? { pathname: "/services", hash: serviceLink.anchor }
                             : "/services"
                         }
+                        scroll={"anchor" in serviceLink}
                         className="block py-2.5 text-sm text-muted transition-colors hover:text-gold-dark"
                       >
                         {t(label)}
@@ -110,16 +118,16 @@ export async function Header() {
                     ))}
                   </div>
                 </details>
-                <Link className="mobile-nav-link" href="/about">
+                <Link className="mobile-nav-link" href="/about" scroll={false}>
                   {t("about")}
                 </Link>
-                <Link className="mobile-nav-link" href="/contact">
+                <Link className="mobile-nav-link" href="/contact" scroll={false}>
                   {t("contact")}
                 </Link>
               </nav>
               <div className="mt-6 flex flex-col gap-5">
                 <LocaleSwitcher label={t("language")} />
-                <Link className="button-primary w-full" href="/contact">
+                <Link className="button-primary w-full" href="/contact" scroll={false}>
                   {t("requestQuote")}
                   <ArrowRight aria-hidden="true" className="h-4 w-4" strokeWidth={1.5} />
                 </Link>
@@ -127,7 +135,8 @@ export async function Header() {
             </Container>
           </div>
         </details>
-      </Container>
+        </Container>
+      </CloseMenuOnNavigate>
     </header>
   );
 }
