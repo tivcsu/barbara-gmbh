@@ -12,7 +12,7 @@ export function Logo({ inverse = false }: LogoProps) {
       href="/"
       className={`inline-flex shrink-0 items-center ${
         inverse
-          ? "relative h-20 w-60 overflow-hidden"
+          ? "relative h-16 w-[11.75rem] overflow-hidden sm:h-20 sm:w-56 xl:w-60"
           : ""
       }`}
       aria-label="Barbara GmbH"
@@ -20,17 +20,17 @@ export function Logo({ inverse = false }: LogoProps) {
     >
       {inverse ? (
         <Image
-          src="/images/barbara-gmbh-logo_white.png"
+          src="/images/barbara-gmbh-logo-white.png"
           alt=""
-          width={1672}
-          height={941}
+          width={1774}
+          height={887}
           loading="lazy"
           sizes="240px"
           className="absolute left-0 top-1/2 h-auto w-full -translate-y-1/2 mix-blend-lighten"
         />
       ) : (
         <Image
-          src="/images/barbara-gmbh-logo.png"
+          src="/images/barbara-gmbh-logo-black.png"
           alt=""
           width={2172}
           height={724}

@@ -24,21 +24,21 @@ export async function Hero() {
   const t = await getTranslations("Home.hero");
 
   return (
-    <section className="overflow-hidden" aria-labelledby="home-heading">
+    <section className="overflow-hidden bg-ink text-warm-white" aria-labelledby="home-heading">
       <Container>
         <div className="grid lg:min-h-[42rem] lg:grid-cols-[1.05fr_0.95fr] xl:min-h-[46rem]">
           <div className="flex flex-col justify-center py-16 sm:py-20 lg:py-24 lg:pr-14 xl:pr-20">
-            <p className="text-[0.7rem] font-bold uppercase tracking-[0.22em] text-gold-dark">
+            <p className="text-[0.7rem] font-bold uppercase tracking-[0.22em] text-gold-light">
               {t("eyebrow")}
             </p>
             <h1
               id="home-heading"
-              className="mt-6 max-w-[12ch] font-display text-[3rem] font-medium leading-[0.98] tracking-[-0.035em] text-ink sm:text-[4rem] lg:text-[4.75rem]"
+              className="mt-6 max-w-[12ch] font-display text-[3rem] font-medium leading-[0.98] tracking-[-0.035em] text-warm-white sm:text-[4rem] lg:text-[4.75rem]"
             >
-              {t("titleBefore")} <span className="text-gold-dark">{t("titleAccent")}</span>{" "}
+              {t("titleBefore")} <span className="text-gold-light">{t("titleAccent")}</span>{" "}
               {t("titleAfter")}
             </h1>
-            <p className="mt-7 max-w-xl text-base leading-7 text-muted sm:text-lg sm:leading-8">
+            <p className="mt-7 max-w-xl text-base leading-7 text-warm-white/65 sm:text-lg sm:leading-8">
               {t("description")}
             </p>
 
@@ -47,16 +47,16 @@ export async function Hero() {
                 {t("primaryCta")}
                 <ArrowRight aria-hidden="true" className="h-4 w-4" strokeWidth={1.5} />
               </Link>
-              <Link href="/services" className="button-secondary sm:min-w-48">
+              <Link href="/services" className="button-secondary button-secondary-inverse sm:min-w-48">
                 {t("secondaryCta")}
                 <ArrowDownRight aria-hidden="true" className="h-4 w-4" strokeWidth={1.5} />
               </Link>
             </div>
 
-            <ul className="mt-11 grid grid-cols-2 gap-x-5 gap-y-4 border-t border-border pt-6 sm:grid-cols-4">
+            <ul className="mt-11 grid grid-cols-2 gap-x-5 gap-y-4 border-t border-white/15 pt-6 sm:grid-cols-4">
               {trustPoints.map(([key, Icon]) => (
-                <li key={key} className="flex items-center gap-2 text-xs font-semibold text-ink">
-                  <Icon aria-hidden="true" className="h-4 w-4 text-gold-dark" strokeWidth={1.5} />
+                <li key={key} className="flex items-center gap-2 text-xs font-semibold text-warm-white">
+                  <Icon aria-hidden="true" className="h-4 w-4 text-gold-light" strokeWidth={1.5} />
                   {t(`trust.${key}`)}
                 </li>
               ))}
@@ -76,7 +76,7 @@ export async function Hero() {
             />
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-warm-white/70 to-transparent lg:inset-y-0 lg:left-0 lg:right-auto lg:h-auto lg:w-16 lg:bg-gradient-to-r"
+              className="pointer-events-none absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-ink/70 to-transparent lg:inset-y-0 lg:left-0 lg:right-auto lg:h-auto lg:w-16 lg:bg-gradient-to-r"
             />
             <div className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-gradient-to-t from-black/60 to-transparent p-5 pt-24 text-white sm:p-7">
               <p className="max-w-[18rem] text-xs font-semibold uppercase leading-5 tracking-[0.15em]">

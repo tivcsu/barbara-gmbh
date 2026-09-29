@@ -22,15 +22,15 @@ export function PageHero({
   marker,
 }: PageHeroProps) {
   return (
-    <section className="overflow-hidden bg-white">
+    <section className="overflow-hidden bg-ink text-warm-white">
       <Container>
         <div className="grid lg:min-h-[40rem] lg:grid-cols-[0.88fr_1.12fr]">
           <div className="flex flex-col justify-center py-16 sm:py-20 lg:py-24 lg:pr-16">
-            <Eyebrow>{eyebrow}</Eyebrow>
-            <h1 className="mt-7 max-w-[12ch] font-display text-[3rem] font-medium leading-[0.98] tracking-[-0.035em] text-ink sm:text-[4rem] lg:text-[4.6rem]">
+            <Eyebrow inverse>{eyebrow}</Eyebrow>
+            <h1 className="mt-7 max-w-[12ch] font-display text-[3rem] font-medium leading-[0.98] tracking-[-0.035em] text-warm-white sm:text-[4rem] lg:text-[4.6rem]">
               {title}
             </h1>
-            <p className="mt-7 max-w-xl text-base leading-7 text-muted sm:text-lg sm:leading-8">
+            <p className="mt-7 max-w-xl text-base leading-7 text-warm-white/65 sm:text-lg sm:leading-8">
               {description}
             </p>
           </div>
@@ -44,6 +44,10 @@ export function PageHero({
               placeholder="blur"
               className="object-cover object-center"
               sizes="(min-width: 1280px) 690px, (min-width: 1024px) 56vw, 100vw"
+            />
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-ink/55 to-transparent"
             />
             <span className="absolute right-0 top-0 bg-ink px-5 py-4 text-[0.65rem] font-bold tracking-[0.2em] text-warm-white">
               {marker}

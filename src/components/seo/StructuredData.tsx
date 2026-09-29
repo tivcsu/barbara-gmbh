@@ -14,7 +14,7 @@ export function StructuredData() {
         "@id": `${siteUrl}#organization`,
         name: company.name,
         url: siteUrl,
-        logo: absoluteUrl("/images/barbara-gmbh-logo.png"),
+        logo: absoluteUrl("/images/barbara-gmbh-logo-black.png"),
       },
       {
         "@type": "WebSite",

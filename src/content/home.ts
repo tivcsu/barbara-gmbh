@@ -1,5 +1,5 @@
 import aboutTeam from "@/public/images/about-team.jpg";
-import heroOfficeEnhanced from "@/public/images/hero-office-enhanced.png";
+import heroOffice from "@/public/images/hero-office.jpg";
 import serviceBuilding from "@/public/images/service-building.jpg";
 import serviceDeep from "@/public/images/service-deep.jpg";
 import serviceMaintenance from "@/public/images/service-maintenance.jpg";
@@ -7,7 +7,7 @@ import serviceOffice from "@/public/images/service-office.jpg";
 import serviceWindow from "@/public/images/service-window.jpg";
 
 export const homeImages = {
-  hero: heroOfficeEnhanced,
+  hero: heroOffice,
   about: aboutTeam,
 } as const;
 

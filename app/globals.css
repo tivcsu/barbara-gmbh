@@ -151,6 +151,15 @@ summary::-webkit-details-marker {
   color: var(--gold-dark);
 }
 
+.nav-link-inverse {
+  color: var(--background);
+}
+
+.nav-link-inverse:hover,
+.nav-link-inverse:focus-visible {
+  color: var(--gold-light);
+}
+
 .nav-link:hover::after,
 .nav-link:focus-visible::after,
 .nav-dropdown[open] > .nav-link::after {
@@ -227,6 +236,17 @@ summary::-webkit-details-marker {
 .button-secondary:hover {
   background: var(--border);
   color: var(--gold-dark);
+}
+
+.button-secondary-inverse {
+  border-color: var(--gold-light);
+  color: var(--background);
+}
+
+.button-secondary-inverse:hover,
+.button-secondary-inverse:focus-visible {
+  background: rgb(255 255 255 / 0.08);
+  color: var(--gold-light);
 }
 
 .button-secondary svg {
@@ -390,6 +410,16 @@ summary::-webkit-details-marker {
 
 .mobile-nav-link:hover {
   color: var(--gold-dark);
+}
+
+.mobile-nav-link-inverse {
+  border-color: rgb(255 255 255 / 0.15);
+  color: var(--background);
+}
+
+.mobile-nav-link-inverse:hover,
+.mobile-nav-link-inverse:focus-visible {
+  color: var(--gold-light);
 }
 
 .footer-heading {
