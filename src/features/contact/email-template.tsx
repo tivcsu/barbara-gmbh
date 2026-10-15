@@ -2,13 +2,13 @@ import type { CSSProperties, ReactElement } from "react";
 
 import type { ContactService, ContactSubmission } from "./types";
 
-const serviceLabels: Record<ContactService, { de: string; en: string }> = {
-  "maintenance-cleaning": { de: "Unterhaltsreinigung", en: "Maintenance cleaning" },
-  "office-cleaning": { de: "Büroreinigung", en: "Office cleaning" },
-  "building-cleaning": { de: "Gebäudereinigung", en: "Building cleaning" },
-  "window-cleaning": { de: "Fensterreinigung", en: "Window cleaning" },
-  "deep-cleaning": { de: "Grundreinigung", en: "Deep cleaning" },
-  other: { de: "Andere Leistung", en: "Other service" },
+const serviceLabels: Record<ContactService, string> = {
+  "maintenance-cleaning": "Rendszeres takarítás",
+  "office-cleaning": "Irodai takarítás",
+  "building-cleaning": "Épülettakarítás",
+  "window-cleaning": "Ablaktisztítás",
+  "deep-cleaning": "Nagytakarítás",
+  other: "Egyéb szolgáltatás",
 };
 
 const bodyStyle: CSSProperties = {
@@ -41,40 +41,38 @@ export function ContactEnquiryEmail({
 }: {
   submission: ContactSubmission;
 }): ReactElement {
-  const service = submission.service
-    ? serviceLabels[submission.service][submission.locale]
-    : "—";
+  const service = submission.service ? serviceLabels[submission.service] : "—";
 
   return (
-    <html lang="de">
+    <html lang="hu">
       <body style={bodyStyle}>
         <main style={cardStyle}>
           <p style={{ color: "#8e6825", fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em" }}>
-            BARBARA GMBH WEBSITE
+            BARBARA GMBH WEBOLDAL
           </p>
           <h1 style={{ fontFamily: "Georgia, serif", fontSize: "30px", fontWeight: 500, margin: "12px 0 8px" }}>
-            Neue Kontaktanfrage
+            Új kapcsolatfelvételi üzenet
           </h1>
           <p style={{ color: "#6c675f", lineHeight: 1.6, margin: 0 }}>
-            Eingegangen am {formatReceivedAt(submission.receivedAt)} · Sprache: {submission.locale.toUpperCase()}
+            Beérkezett: {formatReceivedAt(submission.receivedAt)} · Beküldés nyelve: {submission.locale.toUpperCase()}
           </p>
 
-          <p style={labelStyle}>Name</p>
+          <p style={labelStyle}>Név</p>
           <p style={{ margin: 0 }}>{submission.name}</p>
 
-          <p style={labelStyle}>Firma</p>
+          <p style={labelStyle}>Cég</p>
           <p style={{ margin: 0 }}>{submission.company ?? "—"}</p>
 
           <p style={labelStyle}>E-Mail</p>
           <p style={{ margin: 0 }}>{submission.email}</p>
 
-          <p style={labelStyle}>Telefon</p>
+          <p style={labelStyle}>Telefonszám</p>
           <p style={{ margin: 0 }}>{submission.phone ?? "—"}</p>
 
-          <p style={labelStyle}>Gewünschte Leistung</p>
+          <p style={labelStyle}>Igényelt szolgáltatás</p>
           <p style={{ margin: 0 }}>{service}</p>
 
-          <p style={labelStyle}>Nachricht</p>
+          <p style={labelStyle}>Üzenet</p>
           <p style={{ lineHeight: 1.7, margin: 0, whiteSpace: "pre-wrap" }}>{submission.message}</p>
         </main>
       </body>
@@ -83,28 +81,26 @@ export function ContactEnquiryEmail({
 }
 
 export function createContactEmailText(submission: ContactSubmission): string {
-  const service = submission.service
-    ? serviceLabels[submission.service][submission.locale]
-    : "—";
+  const service = submission.service ? serviceLabels[submission.service] : "—";
 
   return [
-    "Neue Kontaktanfrage über die Barbara GmbH Website",
+    "Új kapcsolatfelvételi üzenet a Barbara GmbH weboldaláról",
     "",
-    `Eingegangen: ${formatReceivedAt(submission.receivedAt)}`,
-    `Sprache: ${submission.locale.toUpperCase()}`,
-    `Name: ${submission.name}`,
-    `Firma: ${submission.company ?? "—"}`,
+    `Beérkezett: ${formatReceivedAt(submission.receivedAt)}`,
+    `Beküldés nyelve: ${submission.locale.toUpperCase()}`,
+    `Név: ${submission.name}`,
+    `Cég: ${submission.company ?? "—"}`,
     `E-Mail: ${submission.email}`,
-    `Telefon: ${submission.phone ?? "—"}`,
-    `Gewünschte Leistung: ${service}`,
+    `Telefonszám: ${submission.phone ?? "—"}`,
+    `Igényelt szolgáltatás: ${service}`,
     "",
-    "Nachricht:",
+    "Üzenet:",
     submission.message,
   ].join("\n");
 }
 
 function formatReceivedAt(receivedAt: string): string {
-  return new Intl.DateTimeFormat("de-AT", {
+  return new Intl.DateTimeFormat("hu-HU", {
     dateStyle: "medium",
     timeStyle: "short",
     timeZone: "Europe/Vienna",

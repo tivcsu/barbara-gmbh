@@ -11,7 +11,6 @@ export async function submitContactForm(
   formData: FormData,
 ): Promise<ContactActionState> {
   const requestHeaders = await headers();
-
   return processContactSubmission(locale, formData, {
     clientIp: getClientIp(requestHeaders),
   });

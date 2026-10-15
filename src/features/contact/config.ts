@@ -41,7 +41,6 @@ export function getRateLimitConfig() {
     token: process.env.UPSTASH_REDIS_REST_TOKEN,
     hashSecret: process.env.RATE_LIMIT_HASH_SECRET,
   });
-
   if (!result.success) {
     throw new ContactConfigurationError("rate-limit");
   }

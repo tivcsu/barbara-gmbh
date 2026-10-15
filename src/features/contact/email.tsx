@@ -20,7 +20,7 @@ export async function sendContactEmail(submission: ContactSubmission): Promise<v
     from: config.from,
     to: config.to,
     replyTo: submission.email,
-    subject: "[Barbara GmbH Website] Neue Kontaktanfrage",
+    subject: "[Barbara GmbH weboldal] Új kapcsolatfelvételi üzenet",
     react: <ContactEnquiryEmail submission={submission} />,
     text: createContactEmailText(submission),
   });

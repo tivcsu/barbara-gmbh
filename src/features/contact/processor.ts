@@ -5,11 +5,18 @@ import { routing, type Locale } from "@/src/i18n/routing";
 import { ContactConfigurationError } from "./config";
 import { ContactEmailError, sendContactEmail } from "./email";
 import { checkContactRateLimit } from "./rate-limit";
-import { getFormString, mapContactFieldErrors, validateContactForm } from "./schema";
+import {
+  getFormString,
+  mapContactFieldErrors,
+  validateContactForm,
+} from "./schema";
 import type { ContactActionState, ContactSubmission } from "./types";
 
 export type ContactDependencies = {
-  checkRateLimit: (scope: "ip" | "email", identifier: string) => Promise<boolean>;
+  checkRateLimit: (
+    scope: "ip" | "email",
+    identifier: string,
+  ) => Promise<boolean>;
   sendEmail: (submission: ContactSubmission) => Promise<void>;
   now: () => Date;
 };
@@ -60,7 +67,10 @@ export async function processContactSubmission(
   }
 
   try {
-    const emailAllowed = await dependencies.checkRateLimit("email", validated.data.email);
+    const emailAllowed = await dependencies.checkRateLimit(
+      "email",
+      validated.data.email,
+    );
     if (!emailAllowed) {
       return rateLimited();
     }
@@ -105,6 +115,7 @@ function getFailureEvent(error: unknown): string {
 }
 
 function logContactFailure(event: string, error: unknown): void {
-  const providerCode = error instanceof ContactEmailError ? error.providerCode : "unknown";
+  const providerCode =
+    error instanceof ContactEmailError ? error.providerCode : "unknown";
   console.error(`[contact-form] ${event} (${providerCode})`);
 }
