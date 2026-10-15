@@ -1,0 +1,8 @@
+[build.environment]
+  # These values are intentionally public and appear in generated metadata/content.
+  SECRETS_SCAN_OMIT_KEYS = "SITE_URL,CONTACT_FROM_EMAIL,CONTACT_TO_EMAIL"
+
+  # Turbopack may serialize server-only environment values into its internal build
+  # cache. The cache is not published, so omit only this path while continuing to
+  # scan all deployable output for secrets such as RESEND_API_KEY.
+  SECRETS_SCAN_OMIT_PATHS = ".netlify/.next/cache/turbopack/**"
